@@ -232,7 +232,6 @@ def run(tipe, inp, algoritma) :
     dict_sunda = translate_dict("sunda.txt")
     kalimat = nltk.tokenize.word_tokenize(inp) #array untuk kalimat input dipisahkan berdasarkan spasi
 
-    print(kalimat)
     res = [] #array hasil terjemahan
     if tipe == "Bahasa Sunda" :
         res = translate_words(dict_sunda, kalimat, tipe, algoritma)
@@ -245,9 +244,3 @@ def run(tipe, inp, algoritma) :
         result += " "
 
     return result
-
-# inp = input()
-# tipe ="Bahasa Indonesia"
-# tipe2 ="Bahasa Sunda"
-# algoritma="kmp"
-# print(run(tipe2, inp, algoritma))
