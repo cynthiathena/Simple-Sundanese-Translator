@@ -6,10 +6,8 @@ Pada suatu hari, ada mahasiswa bernama Riyugan yang baru pindah ke Bandung. Pada
 
 ## Prerequisites
 - python3
-- nltk 
-pip3 install -U nltk
-- flask
-sudo pip3 install flask
+- nltk : pip3 install -U nltk
+- flask : sudo pip3 install flask
 - re
 
 ## Virtual Environment
