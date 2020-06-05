@@ -25,7 +25,7 @@ Langkah-langkah :
 5. deactivate  (setelah selesai menggunakan)
 
 ## Langkah untuk menjalankan program 
-1. Masuk ke folder src 
+1. Masuk ke folder routes.py 
 2. python3 routes.py
 3. klik http://127.0.0.1:8080/ (pada Running on http://127.0.0.1:8080/ di terminal)
 Catatan : pada folder src, sudah ada folder upload yang digunakan untuk menyimpan file yang akan diproses. Jika tidak ada folder upload, maka buatlah folder dengan nama upload
