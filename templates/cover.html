@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <style>
+    .wrapper {
+        text-align: center;
+        margin-top:5%;
+    }
+    .button {
+        height: 50px;
+        width: 400px;
+        font-family: Verdana;
+        font-size: 15px;
+        margin-top:2%;
+    }
+    .image {
+        height: 350px;
+        width: 550px;
+    }
+    </style>
+    <head>
+        <title>SUNDANESE TRANSLATOR</title>
+    </head>
+    <body style="background-color:#F7C3AE;">
+    <h1 style="text-align:center;"><font color="black">SUNDANESE TRANSLATOR</font></h1>
+    <div class="wrapper">
+        <img class="image" src="https://tedideas.files.wordpress.com/2017/10/v2_featured_art_disagree_convo_istock.jpg" alt="cover image" /><br><br>
+        <button class="button"><a href="{{ url_for('indo')}}"><b>Bahasa Indonesia ke Bahasa Sunda</b></a></button><br>
+        <button class="button"><a href="{{ url_for('sunda')}}"><b>Bahasa Sunda ke Bahasa Indonesia</b></a></button><br>
+    </div>
+    </body>
+</html>

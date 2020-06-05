@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SUNDANESE TRANSLATOR</title>
+    </head>
+    <body>
+    <style>
+    .container{
+        background-color:white;
+        width:400px; 
+        height:190px; 
+        margin:0 auto;
+    }
+    .container1{
+        background-color:white;
+        width:400px; 
+        height:140px; 
+        margin:0 auto;
+    }
+    .container2{
+        background-color:#F7C3AE;
+        width:1000px; 
+        height:600px; 
+        margin:0 auto;
+    }
+    .wrapper {
+        text-align: center;
+        margin-top:2%;
+    }
+    .button {
+        text-align: center;
+        margin-top:1%;
+    }
+    </style>
+    <div class="container2">
+        <body style="background-color:powderblue;">
+        <h1 style="text-align:center;"><font color="black">SUNDANESE TRANSLATOR</font></h1>
+        <h3 style="text-align:center;"><font color="black">Bahasa Sunda - Bahasa Indonesia</font></h3>
+        <div class="button"> 
+            <button><a href="{{ url_for('indo')}}"><b>SWITCH</b></a></button>
+        </div>
+        <form action="/sunda" method = "POST" enctype="multipart/form-data">
+        <p>
+        <div class="wrapper">
+            <div class="container">
+                <br><b>Algoritma :</b><br><br>
+                <input type="radio" id="bm" name="algoritma" value="bm" style="text-align:center;" required>
+                <label for="bm">Boyer-Moore</label>
+                <input type="radio" id="kmp" name="algoritma" value="kmp" required>
+                <label for="kmp">Knuth-Morris-Pratt</label>
+                <input type="radio" id="regex" name="algoritma" value="regex" required>
+                <label for="regex">Regex</label><br>
+                </p>
+
+                <p>
+                <b>Bahasa Sunda</b><br>
+                <textarea id="input" name="input" rows="4" col="400" font-size="100px" required></textarea>
+                </p>
+            </div>
+            <br>
+            <input type="submit" style="font-size:20px" value="translate"><br>
+            <br>
+            <div class="container1">
+                <br>
+                </form>
+                <b>Bahasa Sunda :</b><br>
+                {{input}}<br><br>
+                <b>Bahasa Indonesia :</b><br>
+                {{result}}<br>
+                <br>
+            </div>
+            <div class="button">
+                <a href={{ url_for( 'cover' )}}>BACK</a>
+            </div>
+        </div>
+    </body>
+    </div>
+</html>
